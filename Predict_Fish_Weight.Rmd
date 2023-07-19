@@ -148,7 +148,7 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottom",main="Adjusted R^2")
 ```
 
-Best regression model is 
+Best regression model is all of them. The tqo  is L1,L2,L3,H-W
 
 ### Best Models
 
@@ -156,7 +156,16 @@ Best regression model is
 Roachbest <-lm(Weight~.,data=Roach)
 summary.lm(Roachbest)
 ```
+The residual standard error is 37.58. the r-squared is 0.821 and the p-value us 1.028e-05.This model has the smallest p-value of all the models that have been completed so far.
+
+
 
 ### Best Two regressor model
+
+```{r}
+Roachtwo <-lm(Weight~Length1+Length3, data=Roach)
+summary.lm(Roachtwo)
+```
+The residual standard error is 36.83. the r squared is 0.8281 and the Pvalue is 1.23e-07. This model has the second to smallest p-value of all of the above.
 
 ## Final Summary Statements
