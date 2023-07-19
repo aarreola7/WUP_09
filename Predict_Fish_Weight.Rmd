@@ -121,6 +121,14 @@ The R-squared is 0.9794 and the residual error is 70.86. The p-value is 8.679. T
 
 ### Best Two regressor model
 
+
+```{r}
+Piketwo <-lm(Weight~Length1+Length3, data=Pike)
+summary.lm(Piketwo)
+```
+
+This model summarizes our bst two regression models. The residual standard error is 92.56 the r squared is and the  p value is 2.572e-11. The smallest p-value has the best result.
+
 ## Roach
 
 ### Best Models
