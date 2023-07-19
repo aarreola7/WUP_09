@@ -166,7 +166,7 @@ The residual standard error is 37.58. the r-squared is 0.821 and the p-value us 
 Roachtwo <-lm(Weight~Length1+Length3, data=Roach)
 summary.lm(Roachtwo)
 ```
-The residual standard error is 36.83. the r squared is 0.8281 and the P-value is 1.23e-07. This model has the second to smallest p-value of all of the above.
+The residual standard error is 36.83. the r-squared is 0.8281 and the P-value is 1.23e-07. This model has the second to smallest p-value of all of the above.
 
 ## Final Summary Statements
 
