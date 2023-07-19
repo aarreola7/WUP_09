@@ -127,7 +127,7 @@ Piketwo <-lm(Weight~Length1+Length3, data=Pike)
 summary.lm(Piketwo)
 ```
 
-This model summarizes our bst two regression models. The residual standard error is 92.56 the r squared is and the  p value is 2.572e-11. The smallest p-value has the best result.
+This model summarizes our best two regression models. The residual standard error is 92.56 the r squared is and the  p value is 2.572e-11. The smallest p-value has the best result.
 
 ## Roach
 
@@ -166,6 +166,8 @@ The residual standard error is 37.58. the r-squared is 0.821 and the p-value us 
 Roachtwo <-lm(Weight~Length1+Length3, data=Roach)
 summary.lm(Roachtwo)
 ```
-The residual standard error is 36.83. the r squared is 0.8281 and the Pvalue is 1.23e-07. This model has the second to smallest p-value of all of the above.
+The residual standard error is 36.83. the r squared is 0.8281 and the P-value is 1.23e-07. This model has the second to smallest p-value of all of the above.
 
 ## Final Summary Statements
+
+The analysis aimed to predict the weight of fish based on various physical attributes for three different species: Perch, Pike, and Roach. For each species, multiple regression models were evaluated, including the best overall model and the best two-element regression model.Perch: The best regression model for predicting Perch weight included all available predictors. The model achieved an adjusted R-squared of 0.94, indicating a good fit.Pike: The best regression model for predicting Pike weight involved all available predictors and exhibited an impressive R-squared value of 0.9794, indicating a strong fit.Roach: The best regression model for predicting Roach weight also included all available predictors. The model achieved an R-squared of 0.821, indicating a reasonably good fit. Overall, the regression analysis demonstrated that using multiple predictors improved the model's predictive capabilities for fish weight compared to using only two predictors. The results suggested that the physical attributes of fish, such as length, height, and width, play a crucial role in determining their weight. However, it's essential to interpret the models' results cautiously and consider potential limitations and assumptions associated with regression analysis.
