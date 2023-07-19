@@ -131,7 +131,31 @@ This model summarizes our bst two regression models. The residual standard error
 
 ## Roach
 
+
+```{r}
+library(leaps)
+regsubsets.out <-
+    regsubsets(Weight ~ .,
+               data = Roach,
+               nbest = 1,       # 1 best model for each number of predictors
+               nvmax = NULL,    # NULL for no limit on number of variables
+               force.in = NULL, force.out = NULL,
+               method = "exhaustive")
+
+summary.out <- summary(regsubsets.out)
+as.data.frame(summary.out$outmat)
+library(car)
+subsets(regsubsets.out,statistic="adjr2",legend="bottom",main="Adjusted R^2")
+```
+
+Best regression model is 
+
 ### Best Models
+
+```{r}
+Roachbest <-lm(Weight~.,data=Roach)
+summary.lm(Roachbest)
+```
 
 ### Best Two regressor model
 
